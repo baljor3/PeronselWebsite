@@ -1,0 +1,16 @@
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0px; /* Adjust this value to control the space between the image and the border */
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: transparent; /* Set your desired background color here */
+    border-radius: .25rem;
+    z-index: -1;
+    transition: background-color 0.3s ease;
+  }
+  
+  .image-container:hover::before {
+    background-color: rgb(104, 194, 201); /* Set your desired hover color here */
+  }
