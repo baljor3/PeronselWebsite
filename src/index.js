@@ -7,9 +7,9 @@ import BrowserRouter from 'react-router-dom/BrowserRouter'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename={"https://baljor3.github.io/PersonalWebsite"}>
+  
     <App />
-  </BrowserRouter>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
