@@ -5,15 +5,15 @@ import Home from './sectionfiles/Homepage';
 
 const App = () => {
   return (
+    
     <Router>
-      <div>
-        <Nav />
+      <Nav/>
+      <Home></Home>
         <Routes>
           <Route path="/about" element={<Home />} />
           <Route path="/projects" element={<Home />} />
           <Route path="/" element={<Home />} />
         </Routes>
-      </div>
     </Router>
   );
 };
