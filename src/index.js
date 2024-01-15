@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { HashRouter as Router } from "react-router-dom";
+import BrowserRouter from 'react-router-dom/BrowserRouter'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    <App />
-  </Router>
+  <BrowserRouter base={"https://baljor3.github.io/PersonalWebsite"}>
+  <App />
+  </BrowserRouter>
+    
+
     
 
 );
