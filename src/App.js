@@ -1,23 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Nav from './Nav';
-import Home from './Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Nav from './sectionfiles/nav';
+import Home from './sectionfiles/Homepage';
 
 const App = () => {
   return (
     <Router>
+      <div>
         <Nav />
-        <Switch>
-          <Route path="/about">
-            <Home />
-          </Route>
-          <Route path="/projects">
-            <Home />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/about" element={<Home />} />
+          <Route path="/projects" element={<Home />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </div>
     </Router>
   );
 };
+
+export default App;
