@@ -5,11 +5,8 @@ import Home from './sectionfiles/Homepage';
 
 const App = () => {
   return (
-    
-    <Router>
-      <Nav/>
       <Home></Home>
-    </Router>
+
   );
 };
 

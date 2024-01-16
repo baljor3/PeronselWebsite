@@ -1,11 +1,11 @@
 import little from "../images/littlelemon.png"
 import "../css/project.css"
 import { useRef } from "react";
+import React from "react";
 
-const Projects = () =>{
-    const projectRef = useRef();
+const Projects = React.forwardRef((props,ref) =>{
     return(
-        <div ref= {projectRef} className="grid grid-cols-2 gap-2 items-center 
+        <div ref={ref} className="grid grid-cols-2 gap-2 items-center 
          justify-center">
             <div id="projects"className="col-span-2 text-center text-2xl font-bold m-3">Projects</div>
             <div className="flex items-center justify-center">
@@ -42,6 +42,6 @@ const Projects = () =>{
         </div>
         </div>
     )
-}
+})
 
 export default Projects
